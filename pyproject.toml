@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "albinear"
+version = "0.1.0"
+description = "your sound companion"
+authors = ["Chris Marais <chrispietermarais@gmail.com>"]
+readme = "README.md"
+packages = [{include = "albinear"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+gunicorn = "^21.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
